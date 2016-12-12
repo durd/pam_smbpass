@@ -1,0 +1,10 @@
+--- /etc/pam.d/sshd  2014-11-30 19:14:17.000000000 +0000
++++ /etc/pam.d/sshd     2014-11-30 19:24:09.000000000 +0000
+@@ -10,6 +10,7 @@
+#auth          sufficient      pam_krb5.so             no_warn try_first_pass
+#auth          sufficient      pam_ssh.so              no_warn try_first_pass
+auth           required        pam_unix.so             no_warn try_first_pass
++auth           optional        /usr/local/lib/pam_smbpass.so   try_first_pass migrate
+
+# account
+account                required        pam_nologin.so
