@@ -4,4 +4,4 @@
 # password
 #password      requisite       pam_passwdqc.so         enforce=users
 password       required        pam_unix.so             no_warn try_first_pass nullok
-+password       optional        /usr/local/lib/pam_smbpass.so   try_first_pass migrate
++password       optional        pam_smbpass.so		try_first_pass migrate
