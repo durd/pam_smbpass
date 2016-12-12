@@ -11,3 +11,6 @@ Only samba43 seems to come with pam_smbpass to compile. samba44 does not, and I 
 
 ## Warning
 Always backup you PAM-files!
+
+## Source
+I used this a long long time ago, then lost how (and never saved my PAM-files) but then found this [forum-thread](https://forums.freebsd.org/threads/49581/).
